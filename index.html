@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ping Pong</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+</head>
+<body>
+    <main>
+        <aside id="profile-section">
+            <h1>PING PONG GAME</h1>
+            <h5>Instructions to play : </h5>
+            <div id="instructions">
+                <p> Press <strong>Enter</strong> to start.</p>
+                <p>Use <i class="fas fa-arrow-circle-right"></i> to move right</p>
+                <p>Use <i class="fas fa-arrow-circle-left"></i> to move right</p>
+                <p id="info">Move the rods using arrow keys and save the ball hitting from the ground.</p>
+            </div>
+
+            <section id="profile-card">
+
+                <h3>Set your profile</h3>
+                <form method="POST">
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <td><input type="text" id="name"></td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td><input type="email"></td>
+                        </tr>
+                        <tr>
+                            <th>Age</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="button" id="submit-btn">Submit</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+
+            <div>
+                <button type="button" id="start-btn">Start Game</button>
+                <p style="font-size: smaller; margin-left: 2rem;">Start Game to throw ball on console</p>
+            </div>
+
+            <section id="contact">
+                <h5>Contact to Developer</h5>
+                <ul style="list-style: none;">
+                    <li class="media-icon"> <a href="https://www.facebook.com/aakash.srivastava.3910829/" target="_blank"> <i class="fab fa-facebook"></i> </a> </li>
+                    <li class="media-icon"> <a href="https://stackoverflow.com/users/13837104/aakash-srivastava" target="_blank"> <i class="fab fa-stack-overflow"></i> </a> </li>
+                    <li class="media-icon"> <a href="https://twitter.com/Aakashs81903962" target="_blank"> <i class="fab fa-twitter"></i> </a> </li>
+                    <li class="media-icon"> <a href="https://www.linkedin.com/in/akash-srivastava-80ba01184/" target="_blank"> <i class="fab fa-linkedin"></i> </a> </li>
+                    <li class="media-icon"> <a href="https://www.instagram.com/aakash.srivastava20/" target="_blank"> <i class="fab fa-instagram"></i> </a> </li>
+                </ul>
+            </section>
+        </aside>
+    
+        <div id="gameapp">
+            <p id="game-over"> GAME OVER !</p>
+
+            <div id="ball"></div>
+            <div id="rod1"></div>
+            <div id="rod2"></div>
+        </div>
+    
+        <aside id="score-section">
+            <h1 style="text-align: center; border-bottom: 1px solid #222227;">SCORE</h1>
+            <p id="highest-score"> Highest Score - <span id="max-score">0</span></p>
+
+            <div id="current-player-card">
+                <div id="player-photo"></div>
+                <h3 id="player-name"></h3>
+                <p>Your Score</p>
+                <div id="current-score"></div>
+            </div>
+
+            <button type="button" id="reset-btn">Restart</button>
+        </aside>
+    </main>
+
+<script type="text/javascript" src="game.js"></script>
+</body>
+</html>
